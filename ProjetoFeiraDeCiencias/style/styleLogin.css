@@ -1,0 +1,113 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+     background-color: #f0fff0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ .login-container {
+     background-color: #FFFFFF;
+     padding: 40px;
+     border-radius: 10px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     width: 100%;
+     max-width: 450px;
+     text-align: center;
+ }
+
+ .login-container h1 {
+     color: #2E8B57;
+     margin-bottom: 10px;
+     font-size: 2em;
+ }
+
+ .login-container p {
+     color: #666;
+     margin-bottom: 30px;
+ }
+
+ .form-group {
+     margin-bottom: 20px;
+     text-align: left;
+ }
+
+ .form-group label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: 600;
+     color: #333;
+ }
+
+ .form-group input {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-size: 1em;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .form-group input:focus {
+     outline: none;
+     border-color: #4CAF50;
+ }
+
+ .btn-submit {
+     width: 100%;
+     padding: 15px;
+     border: none;
+     border-radius: 5px;
+     background-color: #2E8B57;
+     color: #FFFFFF;
+     font-size: 1.1em;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .btn-submit:hover {
+     background-color: #3CB371;
+ }
+
+ .error-message {
+     color: #D8000C;
+     background-color: #FFD2D2;
+     border: 1px solid #D8000C;
+     padding: 10px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .success-message {
+     color: #4F8A10;
+     background-color: #DFF2BF;
+     border: 1px solid #4F8A10;
+     padding: 10px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .separator {
+     border-top: 1px solid #ccc;
+     margin: 25px 0;
+ }
+
+ .separator-text {
+     position: relative;
+     top: -20px;
+     background: #fff;
+     padding: 0 10px;
+     display: inline-block;
+     color: #666;
+     font-weight: 600;
+ }

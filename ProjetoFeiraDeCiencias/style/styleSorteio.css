@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(135deg, #f0fff0, #e6f7ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sorteio-section {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+    margin: auto;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.sorteio-section h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+#ganhador-container {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #4CAF50;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: #f8fff8;
+    border: 2px dashed #d4edda;
+    transition: all 0.6s ease-in-out;
+    word-wrap: break-word;
+    /* Garante que nomes longos se quebrem */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#ganhador-container.final {
+    border: 3px solid #4CAF50;
+    background: #e6ffeb;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#sorteio-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(45deg, #2E8B57, #4CAF50);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+#sorteio-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#sorteio-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.discreet-btn {
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.discreet-btn:hover {
+    background-color: #95a5a6;
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.back-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}

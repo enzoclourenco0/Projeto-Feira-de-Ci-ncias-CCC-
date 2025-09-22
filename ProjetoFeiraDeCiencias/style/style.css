@@ -1,0 +1,206 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px; /* Define a base para o rem */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0fff0;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+    padding: 1.25rem 0;
+    text-align: center;
+    border-bottom: 4px solid #4CAF50;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    flex-grow: 1; /* Permite que o título ocupe o espaço disponível */
+    text-align: left; /* Alinha o título à esquerda */
+}
+
+.user-info {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que o nome e o botão quebrem a linha */
+    align-items: center;
+    gap: 0.9375rem; /* 15px */
+    white-space: nowrap; /* Impede a quebra de linha do texto dentro do user-info */
+}
+
+.user-info span {
+    font-weight: 600;
+    color: white;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Conteúdo Principal */
+main {
+    flex: 1;
+    padding: 1.25rem 0;
+}
+
+/* Seção de Boas-Vindas */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.welcome-section h2 {
+    font-size: 1.8rem;
+    color: #2E8B57;
+    margin-bottom: 0.625rem;
+    font-weight: 600;
+}
+
+.welcome-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Seção de Projetos */
+.projects-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.625rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+}
+
+.project-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.project-list li {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 1.25rem;
+}
+
+.project-list h4 {
+    font-size: 1.2rem;
+    color: #2E8B57;
+    margin-bottom: 0.3125rem;
+    font-weight: 600;
+}
+
+.project-list p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f4f4f4;
+    color: #555;
+    text-align: center;
+    padding: 1.25rem 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Estilo para o botão "Fazer Sorteio" */
+.sorteio-section {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.discreet-btn {
+    display: inline-block;
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    padding: 0.625rem 1.25rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discreet-btn:hover {
+    background-color: #95a5a6;
+    transform: translateY(-2px);
+}
+
+/* Media Queries para ajuste fino */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Aumenta a largura para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        text-align: center; /* Centraliza o título */
+        margin-bottom: 1rem; /* Adiciona espaço abaixo do título */
+    }
+    
+    .user-info {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
